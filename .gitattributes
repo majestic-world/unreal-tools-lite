@@ -1,0 +1,4 @@
+# Keep styling and static markup out of GitHub's language statistics.
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.htm linguist-detectable=false

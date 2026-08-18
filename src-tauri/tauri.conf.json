@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Unreal Tools Lite",
+  "mainBinaryName": "Unreal Tools Lite",
+  "version": "3.2.0",
+  "identifier": "com.mk.unreal-tools-lite",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "unreal-tools-lite",
+        "width": 1235,
+        "height": 850,
+        "center": true,
+        "visible": false,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "nsis",
+    "publisher": "Majestic World Studio",
+    "icon": ["icons/icon.ico"]
+  }
+}
